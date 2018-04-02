@@ -1,0 +1,71 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ikomobi.ikomobiplayer.ui.Fragments.DetailFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/lbl_detail_artist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextDetailTitleStyle" />
+
+        <TextView
+            android:id="@+id/lbl_detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextDetailSubTitleStyle" />
+
+        <ImageView android:id="@+id/img_artwork" style="@style/ImageDetailArtist" />
+
+        <TextView
+            android:id="@+id/lbl_detail_album"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextDetailSubTitleStyle" />
+
+        <ImageButton
+            android:id="@+id/btn_detail_share"
+            style="@style/BtnPlayerStyle"
+            android:src="@drawable/ic_share" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_detail_previous"
+                style="@style/BtnPlayerStyle"
+                android:src="@drawable/ic_player_previous" />
+
+            <ImageButton
+                android:id="@+id/btn_detail_pause"
+                style="@style/BtnPlayerStyle"
+                android:src="@drawable/ic_player_pause" />
+
+            <ImageButton
+                android:id="@+id/btn_detail_play"
+                style="@style/BtnPlayerStyle"
+                android:src="@drawable/ic_player_play" />
+
+            <ImageButton
+                android:id="@+id/btn_detail_next"
+                style="@style/BtnPlayerStyle"
+                android:src="@drawable/ic_player_next" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
